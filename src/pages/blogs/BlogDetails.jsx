@@ -15,7 +15,7 @@ const BlogDetails = () => {
    useEffect(() => {
     const fetchBlog = async() => {
         try {
-            const response =  await axios.get(`http://localhost:5000/blogs/${id}`);
+            const response =  await axios.get(`https://meta-express-app.vercel.app/blogs/${id}`);
             setBlog(response.data.blog)
             setIsLoading(false) 
         } catch (error) {
